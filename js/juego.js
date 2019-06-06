@@ -69,7 +69,13 @@ function chequearSiGano() {
 
 // Implementar alguna forma de mostrar un cartel que avise que ganaste el juego
 function mostrarCartelGanador() {
-  alert("ganaste");
+  var cartel = document.createElement('div');
+  var button = document.createElement('button');
+  cartel.classList.add('cartel');
+  button.innerText = "Reiniciar";
+  var body = document.body;
+  cartel.appendChild(button);
+  body.appendChild(cartel);
 }
 
 /* Función que intercambia dos posiciones en la grilla.
@@ -281,7 +287,7 @@ y ejecutando la función para que se capturen las teclas que
 presiona el usuario */
 function iniciar() {
     mostrarInstrucciones(instrucciones);
-    mezclarPiezas(30);
+    mezclarPiezas(3);
     capturarTeclas();
 }
 
