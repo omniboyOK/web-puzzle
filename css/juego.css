@@ -44,8 +44,10 @@ li::before {
 }
 
 .col-60 {
+  position: relative;
   background: #E84A5F;
   width: 60%;
+  height: auto;
 }
 
 #flecha{
