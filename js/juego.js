@@ -70,8 +70,10 @@ function chequearSiGano() {
 function mostrarCartelGanador() {
   var cartel = document.createElement('div');
   var button = document.createElement('button');
+  button.id = 'boton_ganador';
   cartel.classList.add('cartel');
-  button.innerText = "Reiniciar";
+  cartel.innerText = "Ganaste!";
+  button.innerText = "Volver a Jugar";
   var body = document.body;
   cartel.appendChild(button);
   body.appendChild(cartel);
