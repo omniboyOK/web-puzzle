@@ -90,5 +90,8 @@ li::before {
 }
 
 .cartel {
-  
+  position: absolute;
+  background-color: #EC6778;
+  width: 25%;
+  z-index: 10;
 }

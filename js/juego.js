@@ -62,7 +62,6 @@ function chequearSiGano() {
     if(posicionCorrecta > 8){
       return true;
     } else {
-      console.log("posicion incorrecta");
       return false;
     }
 }
