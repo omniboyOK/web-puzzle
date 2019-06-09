@@ -1,14 +1,10 @@
 /*Código armado por La Foca Loca S.A. No modificar*/
 /*La foca no es mi jefe, it has no power here*/
-@font-face {
-  font-family: 'Dusty'; /*a name to be used later*/
-  src: url('../fonts/Dusty.ttf'); /*URL to font*/
-}
 
 body {
-  font-family: 'Dusty';
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 940px;
-  margin: 5% auto;
+  margin: auto;
   min-height: 100%;
   background-image: url(../images/background.png);
 }
@@ -23,12 +19,12 @@ li {
 }
 li::before {
   content: "• ";
-  color: #EC6778;
+  color: #FCEE21;
 }
 
 .col-40 h1 {
   font-size: 20px;
-  color: #E84A5F;
+  color: #5DD1F9;
 }
 
 .col-40, .col-60 {
@@ -37,17 +33,14 @@ li::before {
   vertical-align: top;
 }
 .col-40 {
-  background: #FFF;
   padding: 30px;
-  color: #000;
+  color: #5DD1F9;
   width: 40%;
 }
 
 .col-60 {
   position: relative;
-  background: #E84A5F;
-  width: 60%;
-  height: auto;
+  overflow: hidden;
 }
 
 #flecha{
@@ -89,10 +82,22 @@ li::before {
   to   { opacity: 1; }
 }
 
+#footer {
+  color: white;
+  margin: 0%;
+  font-size: 1em;
+  border-radius: 5px;
+  text-align: center;
+}
+
 #wrapper {
   width: 100%;
   height: 100%;
   position: relative;
+  margin: 0%;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #282E3A;
 }
 
 .cartel {
