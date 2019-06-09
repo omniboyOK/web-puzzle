@@ -147,3 +147,26 @@ li::before {
   padding: 0.5em;
   margin: 0%;
 }
+
+#iniciar {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  background-color: #39B54A;
+  color: white;
+  font-size: 2em;
+  padding: 0.5em;
+  margin: 0%;
+  border-radius: 0.2em;
+  border: none;
+}
+
+#iniciar:hover {
+  box-sizing: border-box;
+  background-color: white;
+  color: #39B54A;
+  cursor: pointer;
+  font-size: 2em;
+  padding: 0.5em;
+  margin: 0%;
+}

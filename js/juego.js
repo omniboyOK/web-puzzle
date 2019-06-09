@@ -78,7 +78,10 @@ function mostrarCartelGanador() {
   var cartel = document.createElement('div');
   var p = document.createElement('p');
   var button = document.createElement('button');
-  button.onclick = function(){ iniciar() };
+  button.onclick = function(){
+    document.getElementById('cartel').remove();
+    iniciar() 
+  };
 
   button.id = 'boton_ganador';
   cartel.id = 'cartel';
@@ -300,9 +303,9 @@ function capturarTeclas() {
 y ejecutando la función para que se capturen las teclas que 
 presiona el usuario */
 function iniciar() {
-    document.getElementById('cartel').remove();
-    mezclarPiezas(3);
+    mezclarPiezas(30);
+    document.getElementById('iniciar').remove();
 }
 
 // Ejecutamos la función iniciar
-iniciar();
+// iniciar();
