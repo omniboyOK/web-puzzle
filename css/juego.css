@@ -10,7 +10,7 @@ body {
   width: 940px;
   margin: 5% auto;
   min-height: 100%;
-  background-image: url(../images/adventure.jpg);
+  background-image: url(../images/background.png);
 }
 
 ul {
@@ -103,8 +103,14 @@ li::before {
   width: 25%;
   height: 25%;
   z-index: 10;
+  font-size: 2em;
+  text-align: center;
+  float: none;
+
 }
 
 #boton_ganador {
-  
+  border: none;
+  background-color: #E84A5F;
+  clear: both;
 }
