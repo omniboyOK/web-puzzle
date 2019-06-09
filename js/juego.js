@@ -60,6 +60,7 @@ function chequearSiGano() {
     }
 
     if(posicionCorrecta > 8){
+      juegoTerminado = true;
       return true;
     } else {
       return false;
@@ -264,23 +265,23 @@ base a eso hacer algo. No es necesario que entiendas como funciona esto ahora,
 en el futuro ya lo vas a aprender. Por ahora, sólo hay que entender que cuando
 se toca una tecla se hace algo en respuesta, en este caso, un movimiento */
 function capturarTeclas() {
-  document.body.onkeydown = (function(evento) {
-    if (evento.which === codigosDireccion.ABAJO ||
-      evento.which === codigosDireccion.ARRIBA ||
-      evento.which === codigosDireccion.DERECHA ||
-      evento.which === codigosDireccion.IZQUIERDA) {
-        
-      moverEnDireccion(evento.which);
-
-        var gano = chequearSiGano();
-        if (gano) {
-          setTimeout(function() {
-              mostrarCartelGanador();
-              }, 500);
-            }
-            evento.preventDefault();
-        } else capturarTeclas();
-    })
+    document.body.onkeydown = (function(evento) {
+      if (evento.which === codigosDireccion.ABAJO ||
+        evento.which === codigosDireccion.ARRIBA ||
+        evento.which === codigosDireccion.DERECHA ||
+        evento.which === codigosDireccion.IZQUIERDA) {
+          
+        moverEnDireccion(evento.which);
+  
+          var gano = chequearSiGano();
+          if (gano) {
+            setTimeout(function() {
+                mostrarCartelGanador();
+                }, 500);
+              }
+              evento.preventDefault();
+          } else capturarTeclas();
+      })
 }
 
 /* Se inicia el rompecabezas mezclando las piezas 60 veces 
@@ -288,7 +289,7 @@ y ejecutando la función para que se capturen las teclas que
 presiona el usuario */
 function iniciar() {
     mostrarInstrucciones(instrucciones);
-    mezclarPiezas(3);
+    mezclarPiezas(30);
     capturarTeclas();
 }
 
