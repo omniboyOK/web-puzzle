@@ -108,7 +108,7 @@ li::before {
   background-color: #282E3A;
 }
 
-.cartel {
+#cartel {
   color: #F2F2F2;
   position: absolute;
   width: 940px;
@@ -121,13 +121,13 @@ li::before {
   background-color: #39B54A;
 }
 
-.cartel p {
+#cartel p {
   clear: both;
   font-size: 5em;
   margin: 0%;
 }
 
-.cartel button {
+#cartel button {
   background-color: white;
   color: #39B54A;
   font-size: 2em;
@@ -137,7 +137,7 @@ li::before {
   border: none;
 }
 
-.cartel button:hover {
+#cartel button:hover {
   box-sizing: border-box;
   background-color: #39B54A;
   border: solid 2px white;

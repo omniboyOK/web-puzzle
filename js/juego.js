@@ -3,6 +3,11 @@ var instrucciones = ["Utiliza las flechas para mover las piezas al espacio vacio
                     "Ordena las piezas para formar la imagen",
                     "Cuando todas las piezas esten en su lugar habras ganado!"
 ];
+
+// Carga las instrucciones al cargar la página para poder reiniciar el juego
+// sin repetir las instrucciones
+window.onload = mostrarInstrucciones(instrucciones), capturarTeclas();
+
 // Arreglo para ir guardando los movimientos que se vayan realizando
 var movimientos = [];
 
@@ -67,19 +72,16 @@ function chequearSiGano() {
     }
 }
 
-//Creación de cartel
-function alerta(){
-}
-
 // Implementar alguna forma de mostrar un cartel que avise que ganaste el juego
 function mostrarCartelGanador() {
 
   var cartel = document.createElement('div');
   var p = document.createElement('p');
   var button = document.createElement('button');
+  button.onclick = function(){ iniciar() };
 
   button.id = 'boton_ganador';
-  cartel.classList.add('cartel');
+  cartel.id = 'cartel';
   p.innerText = "Ganaste!";
   button.innerText = "¿Volver a Jugar?";
   var body = document.body;
@@ -298,9 +300,8 @@ function capturarTeclas() {
 y ejecutando la función para que se capturen las teclas que 
 presiona el usuario */
 function iniciar() {
-    mostrarInstrucciones(instrucciones);
+    document.getElementById('cartel').remove();
     mezclarPiezas(3);
-    capturarTeclas();
 }
 
 // Ejecutamos la función iniciar
