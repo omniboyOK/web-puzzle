@@ -6,7 +6,7 @@ var instrucciones = ["Utiliza las flechas para mover las piezas al espacio vacio
 
 // Carga las instrucciones al cargar la página para poder reiniciar el juego
 // sin repetir las instrucciones
-window.onload = mostrarInstrucciones(instrucciones), capturarTeclas();
+window.onload = mostrarInstrucciones(instrucciones);
 
 // Arreglo para ir guardando los movimientos que se vayan realizando
 var movimientos = [];
@@ -304,6 +304,7 @@ y ejecutando la función para que se capturen las teclas que
 presiona el usuario */
 function iniciar() {
     mezclarPiezas(30);
+    capturarTeclas();
     document.getElementById('iniciar').remove();
 }
 
