@@ -38,7 +38,7 @@ function mostrarInstrucciones(intrucciones) {
   var instruccion = '';
   var idLista = 'lista-instrucciones';
   for(var i = 0 ; i < instrucciones.length; i++){
-    instruccion = instruccion + instrucciones[i];
+    instruccion = instrucciones[i];
     mostrarInstruccionEnLista(instruccion, idLista);
   }
 }
