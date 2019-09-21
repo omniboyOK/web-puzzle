@@ -4,7 +4,7 @@ Trabajo práctico hecho para la clase de Acamica.
 # Demo
 Versión online subida a heroku
 
-### [Click Aqui](https://web-puzzle.herokuapp.com)
+### [Click Aqui](https://puzzle.omniboydev.com)
 
 ## Autores
 
