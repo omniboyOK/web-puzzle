@@ -82,7 +82,7 @@ li::before {
   height: 33.33%;
   margin: 0%;
   float: left;
-  border-top: 5;
+  border-top: 10;
 }
 
 @keyframes fadein {
